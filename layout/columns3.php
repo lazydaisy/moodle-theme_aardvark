@@ -14,12 +14,6 @@
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
-if (right_to_left()) {
-    $regionbsid = 'region-bs-main-and-post';
-} else {
-    $regionbsid = 'region-bs-main-and-pre';
-}
-
 echo $OUTPUT->doctype() ?>
 <html <?php echo $OUTPUT->htmlattributes(); ?>>
 <?php require('head.php'); ?>
@@ -31,7 +25,7 @@ echo $OUTPUT->doctype() ?>
 <?php require('header.php'); ?>
 
     <div id="page-content" class="row-fluid">
-        <div id="<?php echo $regionbsid ?>" class="span9">
+        <div id="region-main-box" class="span9">
             <div class="row-fluid">
                 <section id="region-main" class="span8 pull-right">
                     <?php
