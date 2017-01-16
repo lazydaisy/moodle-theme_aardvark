@@ -18,7 +18,7 @@ echo $OUTPUT->doctype() ?>
 <html <?php echo $OUTPUT->htmlattributes(); ?>>
 <?php require('head.php'); ?>
 
-<body <?php echo $OUTPUT->body_attributes() ?>>
+<body <?php echo $OUTPUT->body_attributes(); ?>>
 
 <?php echo $OUTPUT->standard_top_of_body_html() ?>
 
@@ -33,8 +33,7 @@ echo $OUTPUT->doctype() ?>
             ?>
         </section>
 
-        echo $OUTPUT->blocks('side-pre', 'span3 desktop-first-column');
-        ?>
+        <?php echo $OUTPUT->blocks('side-pre', 'span3 desktop-first-column'); ?>
     </div>
 </div>
     <footer id="page-footer">
